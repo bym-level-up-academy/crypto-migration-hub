@@ -142,3 +142,25 @@
     color: var(--color-foreground);
   }
 }
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.3 0.03 150);
+  --primary: oklch(0.6 0.09 150);
+  --primary-foreground: oklch(1 0 0);
+  --brand-deep: oklch(0.5 0.14 140);
+  --hero-bg: oklch(0.985 0.012 180);
+  --muted: oklch(0.96 0.015 150);
+  --muted-foreground: oklch(0.45 0.03 150);
+  --card: oklch(1 0 0);
+  --border: oklch(0.9 0.02 150);
+  --shadow-soft: 0 10px 40px -10px oklch(0.4 0.05 150 / 0.25);
+}
+@theme inline {
+  --color-brand-deep: var(--brand-deep);
+  --color-hero-bg: var(--hero-bg);
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-display: "Fira Sans Condensed", sans-serif;
+  --shadow-soft: var(--shadow-soft);
+}
+html { scroll-behavior: smooth; }
