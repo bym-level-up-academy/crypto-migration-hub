@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Original migrated media must use imported Lovable Assets pointers rather than source-host URLs, so the site survives the original platform's closure.
