@@ -9,4 +9,5 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Original migrated media must use imported Lovable Assets pointers rather than source-host URLs, so the site survives the original platform's closure.
+- Site images live as static files in public/images and are referenced via import.meta.env.BASE_URL, so the site works both on Lovable and on GitHub Pages (subpath base) without Metaforma.
+- GitHub Pages build: GITHUB_PAGES=1 + BASE_PATH enable prerender and vite base in vite.config.ts; the workflow in .github/workflows/deploy.yml publishes dist/client.
