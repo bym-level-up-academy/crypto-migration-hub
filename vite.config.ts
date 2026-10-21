@@ -7,8 +7,8 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // GitHub Pages build: set GITHUB_PAGES=1 and BASE_PATH=/<repo-name>/ (done by the workflow).
-const isPages = process.env.GITHUB_PAGES === "1";
-const base = process.env.BASE_PATH || "/";
+const isPages = process.env["GITHUB_PAGES"] === "1";
+const base = process.env["BASE_PATH"] || "/";
 
 export default defineConfig({
   tanstackStart: {
